@@ -1,0 +1,10 @@
+@page "/login"
+@inject NavigationManager navigationManager
+<h3>Login</h3>
+<button @onclick="onclick">Submit</button>
+@code {
+    private void onclick()
+    {
+        navigationManager.NavigateTo("/fetchdata");
+    }
+}
